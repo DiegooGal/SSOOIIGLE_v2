@@ -1,6 +1,7 @@
 # Practica 3 - SSOOIIGLE v2.0
 
------ Descripción -----
+---
+## Descripción
 
 El objetivo es crear un buscador con varios tipos de clientes, puede haber 3 tipos:
 	- free_client: Usuario con cuenta gratuita, con busquedas limitadas a un número fijo de palabras.
@@ -8,28 +9,29 @@ El objetivo es crear un buscador con varios tipos de clientes, puede haber 3 tip
 	- unlimited_client: Usuario sin restricciones de busquedas.
 La busqueda se hace utilizando varios hilos en un solo archivo, que se gestionan y crean por el programa.
 
+---
 
------ Compilación -----
-
+## Compilación
 Se proporciona un Makefile para compilar el programa. Para compilar, ejecute:
 
-make all
+```make all```
 
-Esto generará un ejecutable manager en el directorio exec/.
+Esto generará un ejecutable manager en el directorio ```exec/```.
 
 Para testear el código ejecute:
 
-make test
+```make test```
 
 Para limpiar los archivos generados ejecute:
 
-make clean
+```make clean```
 
 Para limpiar el archivo de resultados ejecute:
 
-make clear_file
+```make clear_file```
 
------ Estructura del Makefile -----
+---
+## Estructura del Makefile
 
 DIROBJ := obj/
 DIREXE := exec/
@@ -62,7 +64,8 @@ clear_file:
 	echo "" > docs/Resultado_busquedas.txt
 
 
------ Estructura del Proyecto -----
+---
+## Estructura del Proyecto
 
 El código está organizado en los siguientes directorios:
 
@@ -72,8 +75,10 @@ obj/ - Archivos objeto generados durante la compilación
 exec/ - Binarios ejecutables
 docs/ - Archivos de texto para el diccionario y resultados
 
------ Autor -----
-
+---
+## Autor
 Diego García Álvarez
-Sistemas Operativos 2 - Ingeniería de Computadores
+
+Sistemas Operativos 2
+
 Escuela Superior de Informática - Universidad de Castilla-La Mancha
